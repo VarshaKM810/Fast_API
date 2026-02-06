@@ -42,11 +42,11 @@ def delete_student(id: int):
 def create_student(student: Student):
     return create_student(student)
 
-@app.put("/students/{id}")
+@app.get("/students/{id}")
 def read_student(id: int):
     return read_student(id)
 
-@app.get("/students/{id}")
+@app.put("/students/{id}")
 def update_student(id: int, student: Student):
     return update_student(id, student)
     
